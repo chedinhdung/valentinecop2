@@ -12,7 +12,7 @@ body {
 }
 
 .container {
-    width: 100%;
+    width: 40vh;
     max-width: 520px;
     height: 100vh;
     margin: auto;
@@ -21,12 +21,11 @@ body {
 
 .heart {
     position: absolute;
-    top: 200px;
+    top: 20px;          
     left: 50%;
-    transform: translate(-50%, 0);
-    width: 95%;
-    max-width: 480px;
-    animation: beatHeart 1.5s ease-in-out infinite;
+    transform: translateX(-50%);
+    width: 85%;
+    max-width: 400px;
 }
 
 
@@ -42,41 +41,36 @@ body {
 
 .date-box {
     position: absolute;
-    top: 62%;
+    top: 65vh;          
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
     text-align: center;
-    width: 80%;
+    width: 90%;
 }
 
 .date-line {
-    font-size: 34px;
-    font-weight: bold;
-    font-style: italic;
+    font-size: 6vw;  
 }
 
 .days {
-    margin-top: 14px;
-    font-size: 32px;
-    font-weight: bold;
+    margin-top: 10px;
+    font-size: 6vw;
 }
 
 .bear-left,
 .bear-right {
     position: absolute;
-    top: 62%;
-    transform: translateY(-50%);
-    width: 50%;
-    max-width: 260px;
-    animation: fadeBear 2s ease forwards;
+    top: 70vh;
+    width: 40%;
+    max-width: 180px;
 }
 
 .bear-left {
-    left: -40%;
+    left: 0;
 }
 
 .bear-right {
-    right: -40%;
+    right: 0;
 }
 
 @keyframes fadeBear {
@@ -89,3 +83,20 @@ body {
         transform: translateY(-50%);
     }
 }
+
+@media (max-width: 480px) {
+    .heart {
+        top: 18vh;
+        width: 90%;
+    }
+
+    .date-box {
+        top: 63vh;
+    }
+
+    .bear-left,
+    .bear-right {
+        width: 38%;
+    }
+}
+
