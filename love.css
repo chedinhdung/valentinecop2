@@ -24,7 +24,7 @@ body {
     top: 20px;          
     left: 50%;
     transform: translateX(-50%);
-    width: 55%;
+    width: 310px;
     max-width: 400px;
     animation: beatHeart 1.2s infinite ease-in-out;
 }
@@ -56,13 +56,13 @@ body {
 
 .days {
     margin-top: 10px;
-    font-size: 4vw;
+    font-size: 4vw; 
 }
 
 .bear-left,
 .bear-right {
     position: absolute;
-    top: 70vh;
+    top: 65vh;
     height: 26vh;   
     width: auto;
     animation: fadeBear 2s ease forwards;
