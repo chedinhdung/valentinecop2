@@ -106,3 +106,18 @@ body {
     }
 }
 
+.valentine-img {
+    position: absolute;
+    top: 20px; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 650px;
+
+    opacity: 0;
+    transition: opacity 0.8s ease;
+}
+
+.valentine-img.show {
+    opacity: 1;
+}

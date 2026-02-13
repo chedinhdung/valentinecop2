@@ -19,11 +19,13 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    heart.addEventListener("click", () => {
-        heart.classList.add("hide");
-        letterSection.classList.add("show");
-    });
+    const valentineImg = document.getElementById("valentineImg");
 
+    heart.addEventListener("click", () => {
+    heart.classList.add("hide");          
+    valentineImg.classList.add("show");   
+});
+ 
     envelope.addEventListener("click", () => {
         letterSection.classList.remove("show");
         heart.classList.remove("hide");
