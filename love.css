@@ -24,7 +24,7 @@ body {
     top: 20px;          
     left: 50%;
     transform: translateX(-50%);
-    width: 65%;
+    width: 55%;
     max-width: 400px;
     animation: beatHeart 1.2s infinite ease-in-out;
 }
@@ -62,7 +62,7 @@ body {
 .bear-left,
 .bear-right {
     position: absolute;
-    top: 50vh;
+    top: 70vh;
     height: 26vh;   
     width: auto;
     animation: fadeBear 2s ease forwards;
