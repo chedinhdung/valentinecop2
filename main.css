@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+
+/* SECTION SYSTEM */
+#loveSection,
+#letterSection {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+#flowerSection {
+    position: relative;
+}
+
+
+.section {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 1s ease;
+}
+
+
+.section.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    z-index: 10;
+}
+
+
+/* ========================= */
+/* HEART - LETTER TOGGLE */
+/* ========================= */
+
+
+.center-wrapper {
+    position: relative;
+}
+
+
+/* Tim giữ nguyên layout gốc */
+.heart {
+    transition: opacity 0.6s ease;
+}
+
+
+/* Thư chồng đúng vị trí tim */
+#letterBox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.6s ease;
+}
+
+
+/* Khi thư hiện */
+#letterBox.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+/* Khi tim ẩn */
+.heart.hide {
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+
